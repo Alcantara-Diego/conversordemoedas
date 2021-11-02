@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>conversor de moedas</title>
+</head>
+<body>
+    <div id="container">
+        <div class="overlay" id="overlay1"></div>
+        <header>
+            <h3 id="tituloDoApp">Conversor de moedas
+
+            </h3>
+            <div id="opcoesDeMoeda">
+                <input type="radio" name="tipoDeMoeda" id="dolarRadio" checked>
+                <label for="dolarRadio">Dólar</label>
+                |
+                <input type="radio" name="tipoDeMoeda" id="euroRadio">
+                <label for="euroRadio">Euro</label>
+            </div>
+        </header>
+
+        <main>
+            <div class="overlay" id="overlay2"></div>
+            <section id="telaValorDaMoeda">
+                <p id="moedaInfo1">1 dólar americano é igual a:</p>
+                <div><h2 id="valorDaMoeda">valor da moeda aqui </h2><i class="fas fa-arrow-alt-circle-up setaPositiva"></i></div>
+            </section>
+
+            <div id="conversores">
+                <input type="text" name="conversor1" id="conversor1" placeholder="U$">
+                <div id="setas">
+                    <p id="moedaInfo2">U$</p> <i class="fas fa-arrow-up"></i>  <i class="fas fa-arrow-down"></i> <p>R$</p>
+                </div>
+                <input type="text" name="conversor2" id="conversor2"
+                placeholder="R$">
+            </div>
+
+            <section id="telaValorDaMoeda2">
+                <p class="multiplicadorDaMoeda">U$1 é igual a $1</p>
+                <p class="multiplicadorDaMoeda">U$10 é igual a R$10</p>
+                <p class="multiplicadorDaMoeda">U$100 é igual a R$100</p>
+                <p class="multiplicadorDaMoeda">U$500 é igual a R$500</p>
+                <p class="multiplicadorDaMoeda">U$1000 é igual a R$1000</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>conversor de moedas por Diego Alcântara</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

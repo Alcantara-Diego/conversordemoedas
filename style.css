@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(187, 194, 201);
+}
+#container{
+    position: relative;
+    background-image: url(assets/fundo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 450px;
+    margin: auto;
+    height: 100vh;
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#overlay1{
+    background-color: rgba(211, 224, 233, 0.842);
+}
+#overlay2{
+    background-color: rgba(0, 153, 0, 0.774);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 6px 20px;
+    z-index: 10;
+}
+header #tituloDoApp{
+    font-weight: bold;
+}
+#opcoesDeMoeda input[type="radio"]{
+    display: none;
+}
+#opcoesDeMoeda input[type="radio"] + label{
+    cursor: pointer;
+}
+#opcoesDeMoeda{
+    color: rgb(88, 88, 88);
+}
+#opcoesDeMoeda input[type="radio"]:checked + label{
+    text-decoration: underline;
+}
+
+
+main{
+    background-image: url(assets/fundo2.jpg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60vh;
+}
+div#conversores > input{
+    color: rgb(99, 99, 99);
+}
+div#conversores > input:focus{
+    color: black;
+}
+main > section{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    padding: 14px 5px 5px 5px;
+    text-align: center;
+    box-shadow: 0px 1px 0px black;
+}
+#telaValorDaMoeda{
+    top: -9vh;
+    left: 20%;
+    height: 18vh;
+    width: 60%;
+    padding: 14px 5px 5px 5px;
+    color: grey;
+}
+#telaValorDaMoeda div{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8px;
+    color: black;
+}
+#telaValorDaMoeda h2{
+    margin-right: 7px;
+}
+.setaPositiva{
+    color: rgb(29, 185, 29);
+    font-size: 1.8em;
+}
+#conversores{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#conversores input{
+    width: 70%;
+    height: 8vh;
+    font-size: 1.7em;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#conversores div{
+    font-size: 2em;
+    margin: 20px 0px;
+    color: black;
+}
+#setas{
+    display: flex;
+    flex-direction: row;
+}
+#setas i{
+    margin: 0px 10px;
+}
+#telaValorDaMoeda2{
+    bottom: -9vh;
+    left: 20%;
+    height: 18vh;
+    width: 60%;
+    padding: 14px 5px 5px 5px;
+}
+
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    background-color: rgb(152, 201, 160);
+    color: grey;
+}
